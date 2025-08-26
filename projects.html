@@ -57,8 +57,8 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             padding: 25px;
             transition: transform 0.3s, box-shadow 0.3s;
-            display: flex; /* <-- Add this */
-            flex-direction: column; /* <-- And this */
+            display: flex;
+            flex-direction: column;
         }
         .project-card:hover {
             transform: translateY(-10px);
@@ -74,7 +74,7 @@
         }
         .project-card p {
             line-height: 1.6;
-            flex-grow: 1; /* <-- Add this to make the text area expand */
+            flex-grow: 1;
         }
         .project-card .tags {
             margin-top: 15px;
@@ -86,7 +86,7 @@
             padding: 5px 10px;
             border-radius: 15px;
             font-size: 0.85em;
-            margin: 3px; /* <-- Use margin instead of just right/bottom */
+            margin: 3px;
         }
         .footer {
             text-align: center;
@@ -114,7 +114,6 @@
         <h1 class="page-title">My Projects</h1>
         <div class="projects-grid">
             
-            <!-- Project 1 -->
             <div class="project-card">
                 <a href="https://kabootar-1129.github.io/college-compare-demo" target="_blank">
                     <h3>CollegeCompare - Student Search Platform</h3>
@@ -125,21 +124,21 @@
                 </div>
             </div>
 
-            <!-- Project 2 -->
             <div class="project-card">
-                <h3>Smart Statements - Interactive Report</h3>
-                <p>Redesigned the traditional bank statement into an interactive, mobile-first summary. Integrated data visualization to categorize spending, achieving a 95% clarity rating in user testing and turning confusing data into a clear financial story.</p>
+                <a href="https://movie-recommender-system-nice-rachit.streamlit.app/" target="_blank">
+                    <h3>Movie Recommendation System</h3>
+                </a>
+                <p>Built a content-based filtering model that suggests movies based on user preferences, using a dataset of over 5000 titles. Deployed as a live, interactive web application with Streamlit.</p>
                 <div class="tags">
-                    <span>UI/UX Design</span><span>Data Visualization</span><span>Figma</span>
+                    <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Streamlit</span>
                 </div>
             </div>
 
-            <!-- Project 3 -->
             <div class="project-card">
-                <h3>Movie Recommendation System</h3>
-                <p>Built a machine learning model that suggests movies based on user preferences, using a dataset of over 5000 titles. Leveraged collaborative filtering to achieve an 85% recommendation accuracy rate.</p>
+                <h3>Smart Statements - Interactive Report</h3>
+                <p>Redesigned the traditional bank statement into an interactive, mobile-first summary. Integrated data visualization to categorize spending, achieving a 95% clarity rating in user testing.</p>
                 <div class="tags">
-                    <span>Machine Learning</span><span>Python</span>
+                    <span>UI/UX Design</span><span>Data Visualization</span><span>Figma</span>
                 </div>
             </div>
 
