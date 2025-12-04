@@ -1,53 +1,198 @@
 <!DOCTYPE html>
-                <a href="https://github.com/kabootar-1129/college-compare-demo" target="_blank">
-                    <h3>CollegeCompare - Student Search & Compare</h3>
-                </a>
-                <p>Built a responsive student search and compare platform to help users discover and evaluate colleges. Implemented interactive search, comparison cards, and bookmarking features. Full source code and instructions are available in the linked GitHub repository.</p>
-                <div class="tags">
-                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                </div>
-            </div>
-
-            
-            <div class="project-card">
-                <a href="https://movie-recommender-system-nice-rachit.streamlit.app/" target="_blank">
-                    <h3>Movie Recommendation System</h3>
-                </a>
-                <p>Built a content-based filtering model that recommends movies using cosine similarity. Trained on 5000+ titles, the app was deployed using Streamlit for real-time, interactive movie suggestions.</p>
-                <div class="tags">
-                    <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Streamlit</span>
-                </div>
-            </div>
-
-           
-            <div class="project-card">
-                <a href="https://github.com/kabootar-1129/MiniCompiler" target="_blank">
-                    <h3>Mini Compiler (C + Flex + Bison)</h3>
-                </a>
-                <p>Engineered a compiler in C leveraging Flex for tokenization and Bison for grammar parsing. Supports variable declarations, arithmetic and relational operations, conditional control flow (if/else), and print statements with robust error handling.</p>
-                <div class="tags">
-                    <span>C</span><span>Flex</span><span>Bison</span><span>Compiler Design</span>
-                </div>
-            </div>
-
-            
-            <div class="project-card">
-                <a href="https://github.com/kabootar-1129/EmployeeAPI" target="_blank">
-                    <h3>Employee Management API (Flask CRUD)</h3>
-                </a>
-                <p>A Flask-based web application enabling CRUD operations for managing employees with secure admin login. Uses SQLite as the database and includes dynamic templates for managing records easily.</p>
-                <div class="tags">
-                    <span>Python</span><span>Flask</span><span>SQLite</span><span>HTML</span><span>CSS</span>
-                </div>
-            </div>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rachit Rawat | Projects</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+        background-color: #f0f2f5;
+        color: #333;
+      }
+      .navbar {
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 0 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #0d6efd;
+      }
+      .navbar .nav-links a {
+        color: #555;
+        text-decoration: none;
+        padding: 20px 15px;
+        display: inline-block;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .navbar .nav-links a:hover,
+      .navbar .nav-links a.active {
+        background-color: #0d6efd;
+        color: #fff;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+      .page-title {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 40px;
+        color: #222;
+      }
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+      }
+      .project-card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 25px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        flex-direction: column;
+      }
+      .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
+      .project-card h3 {
+        font-size: 1.4em;
+        color: #0d6efd;
+        margin-top: 0;
+      }
+      .project-card a {
+        text-decoration: none;
+      }
+      .project-card p {
+        line-height: 1.6;
+        flex-grow: 1;
+      }
+      .project-card .tags {
+        margin-top: 15px;
+      }
+      .project-card .tags span {
+        display: inline-block;
+        background-color: #e9ecef;
+        color: #495057;
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 0.85em;
+        margin: 3px;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        background-color: #343a40;
+        color: #f8f9fa;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">Rachit Rawat</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="resume.html">Resume</a>
+      </div>
+    </nav>
+    <!-- Projects Section -->
+    <div class="container">
+      <h1 class="page-title">My Projects</h1>
+      <div class="projects-grid">
+        <!-- ✅ CollegeCompare -->
+        <div class="project-card">
+          <a
+            href="https://kabootar-1129.github.io/college-compare-demo"
+            target="_blank"
+          >
+            <h3>CollegeCompare - Student Search Platform</h3>
+          </a>
+          <p>
+            Built a responsive student search and compare platform to help users
+            discover and evaluate colleges. Implemented interactive search,
+            comparison cards, and bookmarking features. Full source code
+            and instructions are available in the linked GitHub repository.
+          </p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span
+            ><span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
         </div>
+        <!-- ✅ Movie Recommender -->
+        <div class="project-card">
+          <a
+            href="https://movie-recommender-system-nice-rachit.streamlit.app/"
+            target="_blank"
+          >
+            <h3>Movie Recommendation System</h3>
+          </a>
+          <p>
+            Built a content-based filtering model that recommends movies using
+            cosine similarity. Trained on 5000+ titles, the app was deployed
+            using Streamlit for real-time, interactive movie suggestions.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>Pandas</span><span>Scikit-learn</span
+            ><span>Streamlit</span>
+          </div>
+        </div>
+        <!-- ✅ Mini Compiler -->
+        <div class="project-card">
+          <a
+            href="https://github.com/kabootar-1129/MiniCompiler"
+            target="_blank"
+          >
+            <h3>Mini Compiler (C + Flex + Bison)</h3>
+          </a>
+          <p>
+            Engineered a compiler in C leveraging Flex for tokenization and
+            Bison for grammar parsing. Supports variable declarations,
+            arithmetic and relational operations, conditional control flow
+            (if/else), and print statements with robust error handling.
+          </p>
+          <div class="tags">
+            <span>C</span><span>Flex</span><span>Bison</span
+            ><span>Compiler Design</span>
+          </div>
+        </div>
+        <!-- ✅ Employee Management API -->
+        <div class="project-card">
+          <a
+            href="https://github.com/kabootar-1129/EmployeeAPI"
+            target="_blank"
+          >
+            <h3>Employee Management API (Flask CRUD)</h3>
+          </a>
+          <p>
+            A Flask-based web application enabling CRUD operations for managing
+            employees with secure admin login. Uses SQLite as the database and
+            includes dynamic templates for managing records easily.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>Flask</span><span>SQLite</span
+            ><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+      </div>
     </div>
-
-    
+    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Rachit Rawat | Built with ❤️ using HTML, CSS, and Python</p>
+      <p>
+        &copy; 2025 Rachit Rawat | Built with ❤️ using HTML, CSS, and Python
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>
